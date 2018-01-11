@@ -41,9 +41,13 @@ new AnimationTimer()
 			else
 			{
 				btn.setText("Click me!");
-				
 			}
 			
+			txt.setText("Score:" + Integer.toString(score));
 		}
-	}
+	}.start();
+	
+	StackPane root = new StackPane();
+	HBox hbox = new HBox();
+	hbox.getChildren().addAll(btn.txt);
 }
